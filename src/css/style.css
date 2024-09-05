@@ -1,0 +1,106 @@
+.container-custom {
+    width: 98%;
+    max-width: 100%; /* 确保不会超过屏幕宽度 */
+    margin: 0 auto;
+    background: #dfdede;
+}
+#settings_home{
+    box-sizing: border-box;
+    width: 7%;
+    margin-top: 18vh;
+    position: fixed;
+    background: #ecf1c4;
+    border-radius: 5px;
+}
+#nodes_shower{
+    box-sizing: border-box;
+    background: #eefacd;
+    border-radius: 5px;
+    height: 100vh;
+}
+#options_shower{
+    position: fixed;
+    background: azure;
+    border-radius: 5px;
+    height: 45vh;
+    width: 23%;
+    overflow: auto;
+    min-width: 13%;
+    box-sizing: border-box;
+    display: inline-block; /* 确保div显示为块级元素 */
+    border: 2px solid black;
+}
+#options_home{
+    margin-top: 47vh;
+    padding: 4px;
+    position: fixed;
+    width: 23%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#Begin{
+    background: #90ffb4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.node_div{
+    position: absolute;
+    min-width: 120px;
+    min-height: 74px;
+    z-index: auto;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 14px;
+    text-align: center;
+    margin: 0 auto;
+}
+.setting_button{
+    margin: 10px;
+    padding: 5px;
+    border: black;
+    border-radius: 5px;
+}
+.node_name{
+    font-size: large;
+    font-weight: bold;
+}
+.node_description{
+    font-size: small;
+}
+.person{
+    background: #f6a7a7;
+}
+.event{
+    background: #ecab82;
+}
+.dialog{
+    background: #c2c37b;
+}
+.package{
+    background: #afdd74;
+}
+#attribute{
+    background: #90d189;
+}
+.save_bt{
+    background: #98e2ec;
+}
+.load_bt{
+    background: #78a8ed;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+.input-group label {
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+.input-group input {
+    flex: 1;
+    margin-right: 10px;
+}

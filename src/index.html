@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App Title</title>
+</head>
+<body>
+<div id="all_container" class="container-custom p-3">
+    <div class="row">
+        <div class="col-12 col-md-1">
+            <div id="settings_home" style="background: #ecf1c4;"></div>
+        </div>
+        <div class="col-12 col-md-8">
+            <div id="nodes_shower"></div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div >
+                <div id="rowsContainer" style="display: none;"></div>
+                <div id="options_shower" style="position: fixed;"></div>
+                <div id="options_home"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The BaseModal -->
+<div id="BaseModal" class="modal base-modal" tabindex="-1" >
+    <div class="modal-content">
+        <!--        <span class="close">&times;</span>-->
+        <div id="BaseModalContainer"></div>
+        <div class="modal-button-container">
+            <button id="BaseAddRowBtn" class="modal-button modal-button-add">添加</button>
+            <button id="BaseSaveBtn" class="modal-button modal-button-save">保存</button>
+            <button id="BaseCloseBtn" class="modal-button modal-button-close">关闭</button>
+        </div>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close-button">&times;</span>
+        <div id="tagContainer" class="tag-container"></div>
+        <div id="contentContainer" class="content-container"></div>
+    </div>
+</div>
+
+</body>
+<style>
+</style>
+<script src="../dist/bundle.js"></script>
+</html>
