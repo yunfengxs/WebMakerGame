@@ -25,11 +25,19 @@ export class HttpClient {
                 const error = await response.text();
                 throw new Error(`HTTP error! Status: ${response.status}, ${error}`);
             }
+
+            // If response status is 204 No Content, return null or empty object
+            if (response.status === 204) {
+                return {};
+            }
+
             return await response.json();
         } catch (error) {
             console.error('HTTP request failed:', error);
             throw error;
         }
+
+
     }
 
     // GET 请求

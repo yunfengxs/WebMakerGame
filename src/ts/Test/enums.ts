@@ -17,3 +17,8 @@ export enum WEAR_TYPE {
     盾牌 = "盾牌",
     远程 = "远程",
 }
+
+export const enumNameMap = {
+    'QUALITY':QUALITY,
+    'WEAR_TYPE':WEAR_TYPE
+}
